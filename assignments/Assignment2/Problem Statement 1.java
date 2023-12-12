@@ -1,27 +1,29 @@
-public class xyz {
-    int a;
-    double b;
-    String c;
+public class DataHolder {
 
-    public void m1(int x, int y) {
-        int z = x + y;
-        System.out.println("Result: " + z);
+    private int value1;
+    private double value2;
+    private String text;
+
+    public void sum(int x, int y) {
+        int result = x + y;
+        System.out.println("Sum: " + result);
     }
 
-    public void m2(String p) {
-        c = p.toUpperCase();
-        System.out.println("Updated String: " + c);
+    public void uppercaseText(String input) {
+        this.text = input.toUpperCase();
+        System.out.println("Uppercase Text: " + text);
     }
 }
 
-public class abc {
+public class Main {
+
     public static void main(String[] args) {
-        xyz obj = new xyz();
-        obj.a = 10;
-        obj.b = 20.5;
-        obj.c = "hello";
-        
-        obj.m1(obj.a, 5);
-        obj.m2("world");
+        DataHolder data = new DataHolder();
+        data.value1 = 10;
+        data.value2 = 20.5;
+        data.text = "hello";
+
+        data.sum(data.value1, 5);
+        data.uppercaseText("world");
     }
 }
