@@ -1,3 +1,5 @@
+// What are the ways you can remove Getters/Setters from below code. Find at least 3 ways for that. It's just an example you can write code in your favorative language. 
+
 public class Person {
     private String name;
     private int age;
