@@ -12,3 +12,4 @@ Requirements:
       => Insufficient quantity during product sale
       => DuplicateProductException
   3. Implement a user interface (console-based or GUI) to interact with the inventory management system.
+  4. Use Custom Exception as much as you can do.
